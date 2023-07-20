@@ -10,6 +10,7 @@
     font-family: 'Poppins',sans-serif;
     color:#0B2447;
     scroll-behavior: smooth;
+
 }
 
 ul{
@@ -44,14 +45,14 @@ a:hover{
 
 .profile{
     opacity: 90%;
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
     border-radius:40%;
 }
 
 .profile-left{
     text-align: center;
-    padding:3rem;
+    padding:1rem;
 }
 
 .profile-right{
@@ -63,7 +64,7 @@ a:hover{
 /* about section */
 
 .about{
-    margin: 4rem;
+    margin:6rem 0;
 }
 
 #about-me{
@@ -78,7 +79,9 @@ font-size: 1.2rem;
 
 /* Experience */
 
-
+.sub-title{
+    color:#6ea1e4;   
+}
 .intern-head {
     margin: 3rem;
 }
@@ -87,6 +90,9 @@ font-size: 1.2rem;
     font-size: 1.2rem;
 }
 
+th.table-item{
+    color:#6ea1e4;  
+}
 
 
 /* skills & certifications */
@@ -98,6 +104,7 @@ font-size: 1.2rem;
 
 li.skill-list.list-group-item {
     margin: 0 2rem;
+    color: #181e26;
 }
 
 li.skill-list.list-group-item:hover {
@@ -124,7 +131,7 @@ li.skill-list.list-group-item:hover {
     cursor: pointer;
     margin: 1rem;
     padding: 1rem;
-    color:#6ea1e4;
+
 }
 
 .content:hover{
@@ -135,3 +142,104 @@ li.skill-list.list-group-item:hover {
 .span{
     color: #6ea1e4;
 }
+
+/* projects */
+
+.project-contain{
+    margin-top: 3rem;
+}
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover img {
+    transform: scale(1.1);
+  }
+  
+  .project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  
+  .project .overlay h5,
+  .project .overlay p,
+  .project .overlay a {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .project .overlay h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project .overlay p {
+    margin-bottom: 15px;
+  }
+  
+  .project .overlay a {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 767px) {
+    .col-md-4 {
+      margin-bottom: 20px;
+    }
+  }
+     
+
+  /* Center the contact form */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the Google Map embed */
+  .embed-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+  }
+  
+  .embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Add spacing to the bottom of the footer */
+  .footer {
+    margin-bottom: 20px;
+  }
+  
