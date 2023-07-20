@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .animated-skills li {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-skills li.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+  </style>
+</head>
+
+
+<body>
+  <div class="container">
+    <h2>Skills of a Full Stack Developer</h2>
+    <ul class="animated-skills">
+      <li>Front-end Development</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Back-end Development</li>
+      <li>Node.js</li>
+      <li>Express.js</li>
+      <li>Database Management</li>
+      <li>SQL</li>
+      <li>NoSQL</li>
+      <li>MongoDB</li>
+      <li>Deployment</li>
+      <li>Version Control (Git)</li>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script>
+  $(".animated-skills li").each(function(index) {
+    var listItem = $(this);
+    setTimeout(function() {
+      listItem.addClass("animate");
+    }, 200 * index);
+  });
+
+
+  </script>
+ 
+
+</body>
+</html>

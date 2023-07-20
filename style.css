@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root{
+    --bgColor:hsl(57, 80%, 71%);
+    --bgColorhover:hsl(60, 9%, 63%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    color:#0B2447;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.title{
+    background-color: var(--bgColor);
+    color:#6ea1e4;
+}
+
+/* navbar */
+header{
+
+    margin-bottom: 5rem;
+    background-color:var(--bgColor);
+}
+.head-item{
+    font-size: 1.3rem;   
+    color: #222528;
+    text-decoration: none;
+    padding:0  1rem;
+    margin: 0 1rem;
+}
+a:hover{
+    color:#6ea1e4;
+}
+
+/* profile and Title section */
+
+
+.profile{
+    opacity: 90%;
+    height: 300px;
+    width: 300px;
+    border-radius:40%;
+}
+
+.profile-left{
+    text-align: center;
+    padding:3rem;
+}
+
+.profile-right{
+    text-align: start;
+    padding:3rem;
+}
+
+
+/* about section */
+
+.about{
+    margin: 4rem;
+}
+
+#about-me{
+padding: 2rem;
+font-size: 1.2rem;
+}
+
+.internship{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+}
+
+/* Experience */
+
+
+.intern-head {
+    margin: 3rem;
+}
+.experience{
+    margin-top: 4rem;
+    font-size: 1.2rem;
+}
+
+
+
+/* skills & certifications */
+
+.skills{
+    margin-top: 4rem;
+}
+
+
+li.skill-list.list-group-item {
+    margin: 0 2rem;
+}
+
+li.skill-list.list-group-item:hover {
+    transform: scale(102%);
+    background-color:var(--bgColorhover);
+    margin: 0 2rem;
+}
+
+.skills-list{
+    margin: 2rem;
+}
+
+/* education */
+
+.education{
+    margin: 3rem;
+}
+
+.edu-content{
+    margin: 2rem;
+}
+
+.content{
+    cursor: pointer;
+    margin: 1rem;
+    padding: 1rem;
+    color:#6ea1e4;
+}
+
+.content:hover{
+    transform: scale(102%);
+    background-color:var(--bgColorhover);
+}
+
+.span{
+    color: #6ea1e4;
+}
